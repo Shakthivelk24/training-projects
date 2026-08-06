@@ -1,0 +1,240 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+   Reset
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    background: linear-gradient(135deg, #2563eb, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #dbeafe;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+nav {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 18px 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===========================
+   Sections
+=========================== */
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #1e3a8a;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #2563eb;
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+.education-item,
+.work-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.education-item:hover,
+.work-item:hover {
+    transform: translateY(-8px);
+}
+
+.education-item h3,
+.work-item h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.education-item p,
+.work-item p {
+    margin: 8px 0;
+}
+
+/* ===========================
+   Forms
+=========================== */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+input[type="submit"] {
+    margin-top: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    section {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+}
